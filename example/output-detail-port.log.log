@@ -1,0 +1,20 @@
+[
+	{
+		"ID": "2.13",
+		"Name": "management",
+		"Description": "",
+		"Shutdown": false,
+		"SecurityLevel": 100,
+		"IPAddres": "13.17.200.8",
+		"Netmask": "255.0.0.0"
+	},
+	{
+		"ID": "14.26",
+		"Name": "INSIDE",
+		"Description": "inside",
+		"Shutdown": false,
+		"SecurityLevel": 30,
+		"IPAddres": "20.22.254.254",
+		"Netmask": "255.255.128.0"
+	}
+]

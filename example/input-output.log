@@ -1,0 +1,6 @@
+transaction begin
+add interface name bond2.13 ip 13.17.200.8 netmask 255.0.0.0
+add interface name bond14.26 ip 20.22.254.254 netmask 255.255.128.0
+add route destination 13.0.0.0 netmask 255.0.0.0 next_hop 13.254.254.254
+add route destination default next_hop 181.209.69.246
+transaction end

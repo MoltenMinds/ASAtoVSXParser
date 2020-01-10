@@ -1,0 +1,35 @@
+[BEGIN] 7/23/2019 12:01:14 PM
+# chan
+# changet
+# changeto co
+# changeto context EXAMPLE
+# sho
+# show ru
+# show running-config 
+: Saved
+
+: 
+: Hardware:   ASA5585-SSP-20
+:
+ASA Version 9.4(4)5 <context>
+!
+hostname EXAMPLE
+enable password hello encrypted
+passwd helloexample encrypted
+names
+!
+interface Port-channel2.13
+ nameif management
+ security-level 100
+ ip address 13.17.200.8 255.0.0.0 standby 13.17.200.0 
+!
+interface Port-channel14.26
+ description inside example.
+ nameif INSIDE
+ security-level 30
+ ip address 20.22.254.254 255.255.128.0 
+
+route management 13.0.0.0 255.0.0.0 13.254.254.254 1
+route OUTSIDE 0.0.0.0 0.0.0.0 181.209.69.246 1
+
+[END] 7/23/2019 12:02:35 PM

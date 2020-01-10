@@ -1,0 +1,14 @@
+[
+	{
+		"Name": "management",
+		"NextHop": "13.254.254.254",
+		"IPAddres": "13.0.0.0",
+		"Netmask": "255.0.0.0"
+	},
+	{
+		"Name": "OUTSIDE",
+		"NextHop": "181.209.69.246",
+		"IPAddres": "0.0.0.0",
+		"Netmask": "0.0.0.0"
+	}
+]
